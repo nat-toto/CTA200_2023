@@ -1,0 +1,333 @@
+    1  ssh nfaraj@gw.cita.utoronto.ca/cita/local/bin/passwd
+    2  ssh nfaraj@gw,cita.utoronto.ca
+    3  /cita/local/bin/passwd
+    4  ssh pika
+    5  cd/fs/lustre/scratch/nfaraj
+    6  python3
+    7  exit()
+    8  python 3.10.2
+    9  Python3.10.2
+   10  python3.10.2
+   11  module load python/2.7.10-rolling
+   12  python3.10.2
+   13  python 3.10.2
+   14  module list
+   15  ssh pika
+   16  module list
+   17  module load python/3.10.2
+   18  python
+   19  ssh pika
+   20  module list
+   21  module load python/3.10.2
+   22  python
+   23  module avail
+   24  vncserver
+   25  cosmo3.cita.utoronto.ca:6
+   26  cosmo3.cita.utoronto.ca
+   27  exit
+   28  netstat -a/grep -i "listen"
+   29  exit() kingcrab
+   30  ssh lobster
+   31  exit
+   32  ifconfig
+   33  whoami
+   34  echo $HOSTNAME
+   35  who
+   36  echo $0
+   37  exit
+   38  cd/
+   39  cd /
+   40  ls
+   41  ls - la
+   42  ls-la
+   43  ls -la
+   44  ssh lobster
+   45  exit
+   46  ssh pika
+   47  exit() ssh pika
+   48  exit(pika)
+   49  exit()pika
+   50  kingcrab
+   51  ssh kingcrab
+   52  cosmo3.cita.utoronto.ca:6
+   53  module
+   54  /home/cta200
+   55  module load python/2.7.12
+   56  lobster
+   57  ssh lobster
+   58  history
+   59  dir | more
+   60  cat
+   61  /mnt/scratch-lustre/$USER/gauss2d
+   62  pwd
+   63  /mnt/scratch-lustre/$USER/x.gauss2d
+   64  /mnt/scratch-lustre/$USER/gauss2d
+   65  cd /mnt/scratch-lustre/$USER/gauss2d
+   66  ls -la
+   67  cd gauss2d/
+   68  ls -la
+   69  module list
+   70  module load python
+   71  module list
+   72  .lscript.py
+   73  ./script.py
+   74  ./plot.py data.txt
+   75  ./gauss2d -xdim 100 -ydim 50 | ./plot.py
+   76  .git
+   77  ls -la
+   78  /home/cta200
+   79  dir | more
+   80  cd
+   81  ls
+   82  find -name '*auss*'
+   83  ls -la
+   84  /home/cta200
+   85  find -name '*auss*'
+   86  cd find-name '*auss*'
+   87  cd find -name '*auss*'
+   88  man find -name '*auss*'
+   89  man find
+   90  cd /home/cta200
+   91  ls -la
+   92  find -name '*auss*'
+   93  /mnt/scratch-lustre
+   94  cd/mnt/scratch-lustre
+   95  cd /mnt/scratch-lustre
+   96  ls -la
+   97  pwd
+   98  cd /mnt/scratch-lustre/nfaraj
+   99  ls -la
+  100  cd
+  101  pwd
+  102  cd /mnt/scratch-lustre/nfaraj
+  103  pwd
+  104  ls -la
+  105  mkdir /mnt/scratch-lustre/$nfaraj/gauss2d
+  106  pwd
+  107  mkdir /mnt/scratch-lustre/$USER/gauss2d
+  108  PWD
+  109  pwd
+  110  /mnt/scratch-lustre/
+  111  pwd
+  112  cd 
+  113  pwd
+  114  echo $USER
+  115  ls /mnt/scratch-lustre/nfaraj/
+  116  mkdir /mnt/scratch-lustre/nfaraj/rrrrr
+  117  ls /mnt/scratch-lustre/nfaraj/
+  118  cp -av /home/cta200/Research/gauss2d /mnt/scratch-lustre/$USER/gauss2d
+  119  less gauss2d.cc
+  120  cat Makefile
+  121  module avail
+  122  g++ gauss2d.cc -o gauss2d
+  123  g++ gauss2d.cc
+  124  dir
+  125  ls -la
+  126  pwd
+  127  cd gauss2d
+  128  pwd
+  129  history
+  130  pwd
+  131  cd /mnt/scratch-lustre/nfaraj/gauss2d/
+  132  ls la
+  133  ls -la
+  134  cd gauss2d/
+  135  ls -la
+  136  g++ gauss2d.cc -o xgauss2d
+  137  ls -la
+  138  more gauss2d.cc 
+  139  ./xgauss2d 
+  140  ./gauss2d > data.txt
+  141  ./xgauss2d > data.t
+  142  ls -la
+  143  rm data.txt
+  144  ls -la
+  145  mv data.t data.txt
+  146  ls -la
+  147  more
+  148  pwd
+  149  exit
+  150  cd scratch-lustre
+  151  cd /scratch-lustre
+  152  cd /fs/lustre/scratch
+  153  pwd
+  154  who
+  155  cd /fs/lustre/scratch/nfaraj
+  156  pwd
+  157  who
+  158  ls -la
+  159  rm gauss2d
+  160  mv gauss2d
+  161  mkdir toto
+  162  ls -la
+  163  rm toto
+  164  rmdir toto
+  165  ls -la
+  166  rmdir rrrrr
+  167  ls -la
+  168  mkdir CTA200_2023
+  169  ls -la
+  170  cd CTA200_2023
+  171  ls-la
+  172  ls -la
+  173  pwd
+  174  exit
+  175  ssh lobster
+  176  cd /scratch-lustre
+  177  ssh lobster
+  178  pwd
+  179  ssh lobster
+  180  cd /mnt/scratch-lustre/$USER/
+  181  pwd
+  182  git clone https://github.com/beniz/eigenmvn.git
+  183  ls -la
+  184  cd eigenvm
+  185  cd eigenmvn
+  186  dir
+  187  eigenmvn/path
+  188  head <eigenmvn>
+  189  head README.md
+  190  git clonehttps://gitlab.com/libeigen/eigen.git
+  191  pwd
+  192  cd ..
+  193  pwd
+  194  mkdir src
+  195  cd src
+  196  git clone https://gitlab.com/libeigen/eigen.git
+  197  lwd
+  198  pwd
+  199  ls -la
+  200  cd eigen
+  201  ls -la
+  202  more INSTALL
+  203  q
+  204  exit
+  205  ssh lobster
+  206  ssh calamari
+  207  pwd
+  208  cd /fs/lustre/scratch/nfaraj
+  209  pwd
+  210  ls -la
+  211  more CTA200_2023
+  212  pwd
+  213  cd CTA200_2023
+  214  pwd
+  215  ls -la
+  216  mkdir assignment_1
+  217  ls -la
+  218  pwd
+  219  vi README.md
+  220  ls -la
+  221  more README.md
+  222  pwd
+  223  cd /fs/lustre/
+  224  pwd
+  225  cd /fs/lustre/scratch/nfaraj
+  226  pwd
+  227  cd home
+  228  cd 
+  229  pwd
+  230  ls -la
+  231  cd /fs/scratch/lustre/nfaraj
+  232  cd /fs/lustre/scratch/nfaraj
+  233  pwd
+  234  ls -la
+  235  cd /fs/lustre/scratch/murray
+  236  pwd
+  237  ls -la
+  238  cd murray
+  239  cd
+  240  pwd
+  241  cd /home/murray
+  242  pwd
+  243  ls -la
+  244  cp Hello_world.c assignment_1
+  245  cp Hello_world.c
+  246  cp ~/home/murray/Hello_world.c ~/fs/lustre/scratch/nfaraj/assignment_1
+  247  cp /home/murray/Hello_world.c /fs/lustre/scratch/nfaraj/assignment_1
+  248  pwd
+  249  cd
+  250  cd /fs/lustre/scratch/nfaraj
+  251  pwd
+  252  ls -la
+  253  more assignment_1
+  254  pwd
+  255  rmdir assignment_1
+  256  rm assignment_1
+  257  ls -la
+  258  cd CTA200_2023
+  259  pwd
+  260  ls -la
+  261  more assignment_1
+  262  cd assignment_1
+  263  pwd
+  264  ls -la
+  265  more .
+  266  cd .
+  267  pwd
+  268  ls -la
+  269  cd
+  270  cd /fs/lustre/scratch/nfaraj
+  271  ls -la
+  272  cd CTA200_2023
+  273  ls -la
+  274  vi README.md
+  275  cd /home/murray
+  276  pwd
+  277  ls -la
+  278  cp /home/murray/Hello_world.c /fs/lustre/scratch/nfaraj/CTA200_2023/assignment_1
+  279  cp /home/murray/Hello_world.py /fs/lustre/scratch/nfaraj/CTA200_2023/assignment_1
+  280  cd
+  281  pwd
+  282  cd /fs/lustre/scratch/nfaraj
+  283  ls -la
+  284  cd CTA200_2023
+  285  ls -la
+  286  cd assignment_1
+  287  ls -la
+  288  more Hello_world.c
+  289  rn Hello_world.c Hello_world_faraj.c
+  290  mv Hello_world.c Hello_world_faraj.c
+  291  ls -la
+  292  mv Hello_world.py Hello_world_faraj.py
+  293  ls -la
+  294  module avail
+  295  module avail gcc
+  296  module load gcc/5.4.0
+  297  pwd
+  298  g++ Hello_world_faraj.c -o Hello_world.x
+  299  ./Hello_world.x
+  300  g++ Hello_world_faraj.py -o Hello_world.py.x
+  301  ./Hello_world_faraj.py
+  302  module load python
+  303  python Hello_world_faraj.py
+  304  vi Hello_world_faraj.py
+  305  python Hello_world_faraj.py
+  306  vi Hello_world_faraj.x
+  307  vi Hello_world_faraj.c
+  308  ./Hello_world_faraj.x
+  309  ./Hello_world.x
+  310  module avail
+  311  module avail gcc
+  312  load gcc/5.4.0
+  313  module load gcc/5.4.0
+  314  g++ Hello_world_faraj.c -o Hello_world.x
+  315  ./Hello_world.x
+  316  .bash history
+  317  ./bash history
+  318  .bashhistory
+  319  echo $0
+  320  -bash history
+  321  cd
+  322  ls -la
+  323  vi .bash_history
+  324  .bash_history
+  325  history
+  326  vi .bash_history
+  327  less junk
+  328  cd /fs/lustre/scratch/nfaraj/CTA200_2023
+  329  pwd
+  330  ls -la
+  331  cd assignment_1
+  332  pwd
+  333  history > history.txt
