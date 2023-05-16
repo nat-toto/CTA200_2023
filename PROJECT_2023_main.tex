@@ -1,0 +1,129 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+
+\title{CTA 200 Project 2023:
+Exploring Histograms}
+\author{Natalie Faraj }
+\date{May 15 2023}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+Histograms and probability density functions (PDFs) are essential tools in astrophysics, and will be a key component of my summer research. This project explores histograms, noise cubes, and relative entropy. 
+
+\section{Prelude}
+The prelude mainly acted as a preworkout for what was to come. It introduces the idea of noise cubes, histograms, and different parameters of probability density functions.
+\begin{enumerate}
+
+    \item I first loaded up "map cube", an array describing simulated line intensities. Its shape was (30, 30, 512), thus its size was 460800. In brief, this means that "map cube" has 3 dimensions; 2 of the dimensions have 30 elements each, while the third has 512 parts (or elements).
+    \item Next, I made an array of the same shape (noted above) but included random elements from a Gaussian distribution.
+
+
+    \item The histogram was then plotted within the given domain:
+       
+       \centering
+        \includegraphics[width=.8\linewidth]{desktop.png}
+        
+
+\begin{enumerate}
+    The histogram looks as expected, however, there is a faint black line at the very bottom of the bars- that's the distribution curve. Obviously, they are not properly scaled. In the next part, we investigate an expression that will allow us to convert using a parameter (leaving us with a better and more even diagram).
+\end{enumerate}
+
+\item Given the Gaussian probability distribution function: 
+\[f(x) = \frac{1}{\sigma\sqrt{2\pi}} 
+  \exp\left( -\frac{1}{2}\left(\frac{x-\mu}{\sigma}\right)^{\!2}\,\right)
+}\]
+
+
+        \begin{enumerate}
+            Its likely that when you plot this function, it won't perfectly match the values of the histogram. The height of the histogram at a given point won't necessarily be the same as the height of the probability distribution function at that point. In saying that, the integral of the probability function along an interval would in fact be the same as the integral (or sum) of the histogram at that same interval. These principles help us develop a proper expression in the next part.
+        \end{enumerate}
+
+\begin{enumerate}
+    5. Since we know that the integral of the probability distribution function is 1, then the integral of our histogram must be the same (once we add a parameter that accounts for units). Thus we have:
+    \[\Delta x N = 1 \]
+    Where \[\Delta x N\] is representing the sum of the histogram (its integral) and "1" is the integral of the probability distribution function. Thus we are left with a parameter
+    \[A = \frac{1}{\Delta x N}\] 
+    This can now be used to convert and equalize our units. In this project, we place the parameter in front of the probability density function so that it multiplies through. Just for a comparison, take a look at the new plot (Figure 2, below) which has been scaled using our parameter A. It clearly fits the histogram to the probability curve much better.
+    \end{enumerate}
+  
+
+
+\end{enumerate}
+    
+\section{Histograms in 1D}
+Here, I will investigate some simulated noise cubes and how non-gaussian properties can be detected within signal intensities. 
+
+\[\]
+The next part was repeated for different values of sigma. Essentially, I made new noise cubes and added each to our already existing "map cube". The histograms of the added simulated cubes were each plotted and their means and standard deviations were calculated. Furthermore, the corresponding Gaussian functions were also plotted using the new sigma and mu values (standard deviation and mean, respectively) at the bin centres.
+\[\]
+In regards to whether or not there is a visible difference between the actual histogram values and the Gaussian approximations.....well of course there is a slight difference; as stated previously, their heights vary, but their integrals do end up equating. Below are the histogram sets with varying sigma values:
+
+\centering
+        \includegraphics[width=.8\linewidth]{h1.png}
+        \caption{}
+\[  \sigma=10 (\mu K)
+
+\centering
+        \includegraphics[width=.8\linewidth]{hs_1.png}
+        \caption{}
+        \[  \sigma=10 (\mu K)
+
+        We see that the second graph is centered better.
+
+    \centering
+        \includegraphics[width=.8\linewidth]{h2.png}
+        \caption{}
+\[  \sigma=5 (\mu K)
+
+\centering
+        \includegraphics[width=.8\linewidth]{h_2.png}
+        \caption{}
+        \[  \sigma=5 (\mu K)
+
+    Even when sigma is smaller, the second graph remains more visually pleasing (since it's centered).
+
+    \centering
+        \includegraphics[width=.8\linewidth]{h3.png}
+        \caption{}
+\[  \sigma=2.5 (\mu K)
+
+\centering
+        \includegraphics[width=.8\linewidth]{h_3.png}
+        \caption{}
+        \[  \sigma=2.5 (\mu K)
+
+    Like the previous plots, the second graph is better centered once again.
+\subsection{Kullback-Leibler Divergence}
+Kellback-Leiber divergence is a means of relative entropy:
+\[P_1 log \frac{P_1}{P_2}\)
+\[\]
+Here are the plotted DKL graphs:
+  \centering
+        \includegraphics[width=.9\linewidth]{dkl1.png}
+        \caption{\sigma=10}
+        
+\centering
+        \includegraphics[width=1\linewidth]{dkl2.png}
+        \caption{\sigma = 5}
+        
+
+        
+\centering
+        \includegraphics[width=1\linewidth]{dkl3.png}
+        \caption{\sigma=2.5}
+\begin{enumerate}
+    \item The functions move back and fourth from zero. At times it goes toward zero, and at times it goes away from zero. Because of this non-equilibrium, oscillating pattern....we can conclude the above plot does in fact have distinct non-gaussian components.
+\[\]
+So how does the Gaussianity change as the signals change? Well, as we decrease the noise (sigma value), the oscillating pattern becomes harder to see. The oscillating pattern becomes less prominent as we decrease the noise. Even when we take another look at the histograms above, I notice that when we decrease sigma, the probability curve differs more greatly when compared to its corresponding histogram.
+\end{enumerate}
+
+\begin{enumerate}
+    \item \section{Conclusion}
+In conclusion, this project gave me a greater understanding of histograms, probability functions, and relative entropy by means Kullback-Leiber divergence. It allowed me to grasp a stronger understanding of signals, noise, and the parameters by which they change.
+
+\end{enumerate}
+
+\end{document}
